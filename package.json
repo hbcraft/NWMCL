@@ -1,0 +1,39 @@
+{
+  "name": "nwmcl",
+  "version": "0.0.1",
+  "description": "A nodejs web minecraft launcher!",
+  "author": "Hua_Bing",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev:api": "yarn workspace api run start:dev",
+    "start:api": "yarn workspace api run start",
+    "start:prod": "yarn workspace api run start:prod",
+    "build:api": "yarn workspace api run build",
+    "start:web": "yarn workspace web run start",
+    "build:web": "yarn workspace web run build",
+    "build": "npm run build:api && npm run build:web",
+    "start": "npm run dev:api & npm run start:web"
+  },
+  "workspaces": [
+    "api",
+    "web"
+  ],
+  "dependencies": {
+    "@nestjs/common": "^8.0.0",
+    "@nestjs/core": "^8.0.0",
+    "@nestjs/platform-express": "^8.0.0",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^3.0.2",
+    "@angular/animations": "~12.1.1",
+    "@angular/common": "~12.1.1",
+    "@angular/compiler": "~12.1.1",
+    "@angular/core": "~12.1.1",
+    "@angular/forms": "~12.1.1",
+    "@angular/platform-browser": "~12.1.1",
+    "@angular/platform-browser-dynamic": "~12.1.1",
+    "@angular/router": "~12.1.1",
+    "tslib": "^2.2.0",
+    "zone.js": "~0.11.4"
+  }
+}

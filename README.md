@@ -1,5 +1,7 @@
 # NWMCL - A nodejs web minecraft launcher!
 
+## 未完成
+
 ## 简介
 
 一个nodejs+web的mc启动器
